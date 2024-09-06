@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="“robots“" content="“noindex”" />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>DBE Fly</title>
+  </head>
+  <body>
+    <header>
+      <img src="./assets/logo-green.svg" />
+      <nav class="nav-desktop">
+        <a>Buchen & Vorbereiten</a>
+        <a>Meine Buchungen</a>
+        <a>DBE FLY Entdecken</a>
+      </nav>
+      <img
+        src="./assets/icons/hamburger-menu-svgrepo-com.svg"
+        alt="Menu"
+        class="hamburger-menu"
+      />
+    </header>
+    <main>
+      <div class="hero">
+        <div class="form-container">
+          <div class="form-sections">
+            <div class="tab open">
+              <img
+                src="./assets/icons/plane-svgrepo-com.svg"
+                alt="Flugzeug"
+                class="icon"
+              />
+
+              <p>Flüge</p>
+            </div>
+            <div class="tab closed">
+              <img
+                src="./assets/icons/plane_bed.svg"
+                alt="Flugzeug"
+                class="icon"
+              />
+              <p>Flug & Hotel</p>
+            </div>
+
+            <div class="tab closed">
+              <img
+                src="./assets/icons/car-2-svgrepo-com.svg"
+                alt="Flugzeug"
+                class="icon"
+              />
+
+              <p>Mietwagen</p>
+            </div>
+            <div class="tab closed">
+              <img
+                src="./assets/icons/bed-svgrepo-com.svg"
+                alt="Flugzeug"
+                class="icon"
+              />
+              <p>Hotel</p>
+            </div>
+          </div>
+          <div class="form">
+            <form action="POST">
+              <div class="form row">
+                <select name="flug" id="flug">
+                  <option value="hin-rück-flug">Hin- und Rückflug</option>
+                  <option value="hin-flug">Nur Hinflug</option>
+                </select>
+                <div class="optionen desktop">
+                  <img
+                    src="./assets/icons/options-2-svgrepo-com.svg"
+                    alt="optionen"
+                    class="icon small"
+                  />
+                  <p>Economy, 1 Reisende(r)</p>
+                </div>
+                <div class="optionen desktop">
+                  <input
+                    type="checkbox"
+                    name="is-non-stop"
+                    id="none-stop-flight"
+                  />
+                  <label>Nur Nonstop-Flüge</label>
+                </div>
+              </div>
+              <div class="form row even">
+                <div class="form optionen">
+                  <input
+                    type="text"
+                    class="textarea"
+                    name="Abflughafen"
+                    placeholder="Von"
+                  />
+                  <img
+                    src="./assets/icons/arrows-left-right-fill-svgrepo-com.svg"
+                    alt="pfeile"
+                    class="icon switch desktop"
+                  />
+                  <img
+                    src="./assets/icons/arrows-left-right-fill-svgrepo-com.svg"
+                    alt="pfeile"
+                    class="icon switch mobile"
+                  />
+                  <input
+                    type="text"
+                    class="textarea"
+                    name="Ankuftflughafen"
+                    placeholder="Nach"
+                  />
+                </div>
+                <input
+                  type="text"
+                  placeholder="Abflug - Rückflug"
+                  onfocus="(this.type='date')"
+                  class="datepicker textarea"
+                />
+                <div class="optionen mobile">
+                  <img
+                    src="./assets/icons/options-2-svgrepo-com.svg"
+                    alt="optionen"
+                    class="icon small"
+                  />
+                  <p>Economy, 1 Reisende(r)</p>
+                </div>
+                <div class="optionen mobile">
+                  <input
+                    type="checkbox"
+                    name="is-non-stop"
+                    id="non-stop-flight"
+                  />
+                  <label>Nur Nonstop-Flüge</label>
+                </div>
+                <button>Suchen</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <section>
+        <article>
+          <div class="img-container">
+            <img
+              src="./assets/images/chris-czermak-rom.jpg"
+              alt="Bild von Rom"
+              class="article-img"
+            />
+          </div>
+          <div class="article-headline">
+            <h3>Flugplan 2024</h3>
+            <h2>Entdecken Sie unsere neuen Destinationen</h2>
+          </div>
+        </article>
+
+        <article>
+          <div class="img-container">
+            <img
+              src="./assets/images/chris-lawton-map.jpg"
+              alt="Karte mit Gegenständen"
+              class="article-img"
+            />
+          </div>
+          <div class="article-headline">
+            <h3>DBE Travel Briefing</h3>
+            <h2>Profitieren Sie vom Reiseleitfaden mit nützlichen Tipps</h2>
+          </div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>

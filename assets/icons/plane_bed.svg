@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="plane_bed.svg">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="400"
+     inkscape:cy="445.71429"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1313"
+     inkscape:window-height="1080"
+     inkscape:window-x="2048"
+     inkscape:window-y="128"
+     inkscape:window-maximized="0">
+    <sodipodi:guide
+       position="0,114.05953"
+       orientation="1,0"
+       id="guide1033" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="SVGRepo_bgCarrier"
+       stroke-width="0"
+       style="fill:#f3fcfe;stroke:#f3fcfe"
+       transform="matrix(0.33072917,0,0,0.33072917,23.433569,-10.582189)" />
+    <g
+       id="SVGRepo_tracerCarrier"
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       style="fill:#f3fcfe;stroke:#f3fcfe"
+       transform="matrix(0.33072917,0,0,0.33072917,23.433569,-10.582189)" />
+    <g
+       id="g1042">
+      <g
+         id="SVGRepo_iconCarrier"
+         style="fill:#f3fcfe;stroke:#f3fcfe"
+         transform="matrix(0.23990396,0,0,0.26246741,31.709291,26.33565)">
+        <path
+           d="m 80.55,341.27 c 6.28,6.84 15.1,10.72 24.33,10.71 l 130.54,-0.18 c 10.30192,-0.0138 20.45587,-2.45292 29.64,-7.12 L 556.02,197.03 c 26.74,-13.57 50.71,-32.94 67.02,-58.31 18.31,-28.48 20.3,-49.09 13.07,-63.65 C 628.9,60.5 611.37,49.8 577.86,47.62 548.01,45.68 518.32,53.54 491.58,67.1 l -98.51,49.99 -218.7,-82.06 c -5.35461,-3.607226 -12.24275,-4.031995 -18,-1.11 L 90.62,67.29 C 79.95,72.7 77.37,86.94 85.45,95.82 l 156.22,98.1 -103.21,52.38 -72.35,-36.47 c -5.055184,-2.54869 -11.021176,-2.54126 -16.07,0.02 L 9.91,230.22 c -10.44,5.3 -13.19,19.12 -5.57,28.08 z"
+           id="path993"
+           sodipodi:nodetypes="ccccccccccccccccccccc" />
+      </g>
+      <g
+         style="fill:none"
+         id="g1027"
+         transform="matrix(12.217426,0,0,8.2524805,12.095235,97.87059)">
+        <g
+           id="SVGRepo_bgCarrier-5"
+           stroke-width="0" />
+        <g
+           id="SVGRepo_tracerCarrier-1"
+           stroke-linecap="round"
+           stroke-linejoin="round" />
+        <g
+           id="SVGRepo_iconCarrier-6">
+          <path
+             d="M 2,2 H 0 v 12 h 2 v -2 h 12 v 2 h 2 V 9 C 16,7.34315 14.6569,6 13,6 H 6 C 6,4.89543 5.10457,4 4,4 H 2 Z"
+             fill="#f3fcfe"
+             id="path1012" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
