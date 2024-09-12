@@ -106,6 +106,7 @@ p {
   justify-content: center;
   background-color: #31383aa2;
   z-index: 10;
+  display: none;
 }
 
 .modal {
@@ -115,6 +116,10 @@ p {
   text-align: center;
   padding: 30px;
   position: relative;
+}
+
+.modal-container.open {
+  display: flex;
 }
 
 .btn-close {
