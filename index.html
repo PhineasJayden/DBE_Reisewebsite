@@ -31,7 +31,6 @@
         </div>
       </div>
     <main>
-  
       </div> 
       <div class="hero">
         <div class="form-container">
@@ -73,7 +72,7 @@
             </div>
           </div>
           <div class="form">
-            <form action="POST">
+            <form>
               <div class="form row">
                 <select name="flug" id="flug">
                   <option value="hin-rück-flug">Hin- und Rückflug</option>
@@ -103,6 +102,7 @@
                     class="textarea"
                     name="Abflughafen"
                     placeholder="Von"
+                    required
                   />
                   <img
                     src="./assets/icons/arrows-left-right-fill-svgrepo-com.svg"
@@ -119,13 +119,16 @@
                     class="textarea"
                     name="Ankuftflughafen"
                     placeholder="Nach"
+                    required
                   />
                 </div>
                 <input
                   type="text"
                   placeholder="Abflug - Rückflug"
+                  name="date"
                   onfocus="(this.type='date')"
                   class="datepicker textarea"
+                  required
                 />
                 <div class="optionen mobile">
                   <img
@@ -143,12 +146,14 @@
                   />
                   <label>Nur Nonstop-Flüge</label>
                 </div>
-                <button class="btn-search">Suchen</button>
+                <button class="btn-search" onclick={showFlights(e)}>Suchen</button>
               </div>
             </form>
           </div>
         </div>
       </div>
+      <section class="flights">
+      </section>
       <section>
         <article>
           <div class="img-container">
@@ -183,7 +188,6 @@
       const modal = document.querySelector(".modal-container")
 
       function openModal(e){
-        e.preventDefault()
         modal.classList.add("open")
       };
 
@@ -191,9 +195,12 @@
         modal.classList.remove("open")
       };
 
-      document.querySelector(".btn-close").addEventListener("click", closeModal)
+      //document.querySelector(".btn-close").addEventListener("click", closeModal)
 
-      document.querySelector(".btn-search").addEventListener("click", openModal)
+      //document.querySelector(".btn-search").addEventListener("click", openModal)
     </script>
+    <script src="flüge.js"/>
+  
+
   </body>
 </html>
