@@ -1,6 +1,7 @@
-document.querySelector('form').addEventListener('submit', showFlights());
+document.querySelector('form').addEventListener('submit', showFlights(e));
 
 function showFlights() {
+  e.preventDefault();
   const formData = new FormData(document.querySelector('form'));
   const formObject = {};
   for (const pair of formData.entries()) {
