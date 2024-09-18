@@ -10,6 +10,7 @@
     <title>DBE Fly</title>
   </head>
   <body>
+  
     <header>
       <img src="./assets/logo-green.svg" />
       <nav class="nav-desktop">
@@ -101,6 +102,7 @@
                     type="text"
                     class="textarea"
                     name="Abflughafen"
+                    id="Abflughafen"
                     placeholder="Von"
                     required
                   />
@@ -117,7 +119,8 @@
                   <input
                     type="text"
                     class="textarea"
-                    name="Ankuftflughafen"
+                    name="Ankunftflughafen"
+                    id="Ankunftflughafen"
                     placeholder="Nach"
                     required
                   />
@@ -126,6 +129,7 @@
                   type="text"
                   placeholder="Abflug - Rückflug"
                   name="date"
+                  id="datepicker"
                   onfocus="(this.type='date')"
                   class="datepicker textarea"
                   required
@@ -146,7 +150,7 @@
                   />
                   <label>Nur Nonstop-Flüge</label>
                 </div>
-                <button class="btn-search" onclick={showFlights(e)}>Suchen</button>
+                <button class="btn-search" onclick={}>Suchen</button>
               </div>
             </form>
           </div>
@@ -184,6 +188,20 @@
         </article>
       </section>
     </main>
+    <script>
+      async function loadFormEntries(){
+        const formData = JSON.parse(localStorage.getItem("formEntries"))
+
+        if(formData){
+        document.getElementById("Abflughafen").value = formData.Abflughafen || null
+      document.getElementById("Ankunftflughafen").value = formData.Ankunftflughafen || null
+      document.getElementById("datepicker").value = formData.date || null}else return 
+      }
+
+      loadFormEntries()
+
+      
+      </script>
     <script>
       const modal = document.querySelector(".modal-container")
 

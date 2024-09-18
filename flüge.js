@@ -1,21 +1,23 @@
-document.querySelector('form').addEventListener('submit', showFlights(e));
+document.querySelector('form').addEventListener(
+  'submit',
 
-function showFlights() {
-  e.preventDefault();
-  const formData = new FormData(document.querySelector('form'));
-  const formObject = {};
-  for (const pair of formData.entries()) {
-    formObject[`${pair[0]}`] = `${pair[1]}`;
-  }
-  console.log(formObject);
+  function (e) {
+    e.preventDefault();
+    const formData = new FormData(document.querySelector('form'));
+    const formObject = {};
+    for (const pair of formData.entries()) {
+      formObject[`${pair[0]}`] = `${pair[1]}`;
+    }
 
-  fetch(
-    `https://storage01.dbe.academy/fswd/travel-api.php?start=${formObject.Abflughafen}&ziel=${formObject.Ankuftflughafen}&datum=${formObject.date}`
-  )
-    .then((response) => response.json())
-    .then((data) => {
-      for (const flight of data) {
-        content = `
+    localStorage.setItem('formEntries', JSON.stringify(formObject));
+
+    /*fetch(
+      `https://storage01.dbe.academy/fswd/travel-api.php?start=${formObject.Abflughafen}&ziel=${formObject.Ankuftflughafen}&datum=${formObject.date}`
+    )
+      .then((response) => response.json())
+      .then((data) => {
+        for (const flight of data) {
+          content = `
       <div class="flight-container">
     <div class="flight-details-container">
     <div class="flight-details">
@@ -59,9 +61,10 @@ function showFlights() {
     <img src="./assets/icons/arrow-down.svg" class="icon small"></div>
   </div>
       `;
-        document
-          .querySelector('.flights')
-          .insertAdjacentHTML('afterbegin', content);
-      }
-    });
-}
+          document
+            .querySelector('.flights')
+            .insertAdjacentHTML('afterbegin', content);
+        }
+      });*/
+  }
+);
